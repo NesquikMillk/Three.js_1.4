@@ -22,11 +22,11 @@
 			import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.138.3/examples/jsm/loaders/GLTFLoader.js';
 			const loader = new GLTFLoader();
 
-			loader.load('path/to/punk.gltf', function (gltf) {
-				scene.add(gltf.scene);
-			}, undefined, function (error) {
-				console.error(error);
-			});
+			loader.load('punk.gltf', function (gltf) {
+    scene.add(gltf.scene);
+}, undefined, function (error) {
+    console.error(error);
+});
 
 			// Set the camera position
 			camera.position.z = 5;
