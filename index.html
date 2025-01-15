@@ -15,9 +15,9 @@
 			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 			const loader = new GLTFLoader();
 
-	loader.load( 'pank.gltf', function ( gltf ) {
+	loader.load( 'path/to/pank.gltf', function ( gltf ) {
 
-	scene.add( pank.gltf );
+	scene.add( gltf.scene );
 
 	}, undefined, function ( error ) {
 
