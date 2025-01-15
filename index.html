@@ -29,8 +29,8 @@
 });
 
 			// Set the camera position
-			camera.position.z = 5;
-
+			camera.position.set(0, 1, 5); // Камера немного выше
+camera.lookAt(0, 1, 0); // Камера будет смотреть на центр
 			// Animation loop
 			function animate() {
 				requestAnimationFrame(animate);
